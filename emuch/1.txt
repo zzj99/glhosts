@@ -1,0 +1,32 @@
+Excitation energies and oscillator strengths:
+
+Excited State   1:      Singlet-A      0.9525 eV 1301.61 nm  f=0.0025  <S**2>=0.000
+      98 -> 99         0.67884
+      98 ->102        -0.17135
+
+Excited State   2:      Singlet-A      1.0166 eV 1219.56 nm  f=0.0031  <S**2>=0.000
+      98 ->100         0.69759
+
+Excited State   3:      Singlet-A      1.2316 eV 1006.69 nm  f=0.0170  <S**2>=0.000
+      98 ->101         0.68920
+      98 ->105         0.10390
+
+Excited State   4:      Singlet-A      1.5744 eV  787.48 nm  f=0.2752  <S**2>=0.000
+      98 -> 99         0.16471
+      98 ->102         0.66573
+      98 ->110         0.13483
+
+Excited State   5:      Singlet-A      1.6512 eV  750.89 nm  f=0.2708  <S**2>=0.000
+      98 ->104         0.66975
+      98 ->107         0.17328
+"Li@Diam-polarM06.log" 3787L, 211366C                                                                        
+534,-4.884709,0.001271\\Version=EM64L-G09RevA.02\State=1-A\HF=-1006.54
+94371\RMSD=8.798e-09\Dipole=-0.00537,6.6996818,-0.0016235\Polar=513.37
+04462,-0.1742604,552.2277718,3.4802393,-0.0440703,475.9422371\HyperPol
+ar=81.3056555,-4699.5012362,-239.1410774,-10511.090932,14.3344791,-142
+9.8702519,439.9199802,17.2632985,-6155.8437869,16.0307126\Quadrupole=1
+2.4373719,-30.3822442,17.9448723,0.0402956,0.959084,0.0138243\PG=C01 [
+X(C14H34Li2N8)]\\@
+Job cpu time:  0 days  7 hours 20 minutes 47.5 seconds.
+File lengths (MBytes):  RWF=    238 Int=      0 D2E=      0 Chk=     61 Scr=      1
+Normal termination of Gaussian 09 at Tue May 14 19:49:10 2013.
