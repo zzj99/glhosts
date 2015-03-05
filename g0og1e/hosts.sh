@@ -2,7 +2,7 @@
 # @brief   check if google hosts is available, if not, update hosts 
 # @usage   (chmod +x *.sh for the first time) sudo ./hosts.sh 
 # @author  zzj.99@hotmail.com 
-# @date    2015/1/29
+# @date    2015/3/4
 
 # Make sure only root can run this script
 if [[ "$(id -u)" != "0" ]]; then
