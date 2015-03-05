@@ -9,7 +9,6 @@ if [[ "$(id -u)" != "0" ]]; then
 	echo " Sorry, you must be 'root' or use 'sudo' to run this script." 
 	exit 1
 fi
-
 # detect OS of the user
 platform="unknown"
 hostsfile=''
