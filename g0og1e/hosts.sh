@@ -48,8 +48,8 @@ updatehosts()
 
 	# grab #google lines from html file
 	# and remove html tags, replace html white space to white space
-	sed -n -e '/^[\t ]*#google.*hosts/,/^[\t ]*#google.*hosts.*end/p' hosts.html | \
-		sed -e 's/<[^>]*>//g; s/\&nbsp;/ /g' > google_hosts
+	sed -n -e '/==.*hosts/,/^[\t ]*#google.*hosts.*end/p' hosts.html | \
+		sed -e 's/<[^>]*>//g; s/\&nbsp;/ /g; /==.*hosts/d' > google_hosts
 
 	# remove #google lines in old hosts
 	sed -e '/^[\t ]*#google.*hosts/,/^[\t ]*#google.*hosts.*end/d' ${hostsfile} > old_hosts
