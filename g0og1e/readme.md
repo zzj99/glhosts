@@ -16,4 +16,4 @@ To use hosts.sh, please make sure your hosts DONOT contain google contents, such
 
 Acknowledgement
 ------
-The author thank 360kb and txthinking very much for their great internet spirit.
+The author thank [360kb](http://www.360kb.com/kb/2_122.html) and [txthinking](https://github.com/txthinking/google-hosts) very much for their great internet spirit.
