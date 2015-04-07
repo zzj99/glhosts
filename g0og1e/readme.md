@@ -5,7 +5,7 @@ The python version script is strongly recommended, as the shell script version i
 
 hosts.py: python2 script, works for Windows, Linux and MacOS.
 
-hosts.sh: shell script to copy hosts for g0og1e from specific website, works for Linux and MacOS. 
+hosts.sh: shell script, works for Linux and MacOS. 
 
 
 Usage
