@@ -1,10 +1,12 @@
 Files
 ------
+The scripts in this folder are used to update hosts for g0og1e from specific URLs.
+The python version script is strongly recommended, as the shell script version is just a demo for test.
+
 hosts.py: python2 script, works for Windows, Linux and MacOS.
 
 hosts.sh: shell script to copy hosts for g0og1e from specific website, works for Linux and MacOS. 
 
-The python version script is strongly recommended. The shell script version is just a demo for test.
 
 Usage
 ------
