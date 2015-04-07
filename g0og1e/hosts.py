@@ -19,9 +19,9 @@ def create_dict(hosts_file):
     new_dict = collections.OrderedDict() # ordered dictionary
     f = open(hosts_file,"r")    
     for line in f:
-        pattern = re.match(r"^\s*(\d+\.\d+\.\d+\.\d+)\s+(.*)\s*",line)
-        if (pattern):
-            new_dict[pattern.group(2)] = pattern.group(1)
+        match = re.match(r"^\s*(\d+\.\d+\.\d+\.\d+)\s+(.*)\s*",line)
+        if (match):
+            new_dict[match.group(2)] = match.group(1)
     f.close()
     return new_dict
 
