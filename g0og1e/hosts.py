@@ -39,7 +39,6 @@ def find_ip(hosts, name):
 
 """ check if ip works """
 def check_ip(ip):
-    print "checking current hosts ..."
     # if ip is found in hosts file
     if (ip):
         # check if current ip works
