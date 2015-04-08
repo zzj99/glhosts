@@ -1,4 +1,4 @@
-#!usr/bin/env python
+#!/usr/bin/env python
 # check and update google hosts from specific URL
 # written in python version 2.7.6
 # works for python version 2.7+, but not python 3
