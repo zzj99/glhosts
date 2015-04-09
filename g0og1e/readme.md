@@ -1,20 +1,17 @@
 Files
 ------
-The scripts in this folder are used to update hosts for g0og1e from specific URLs.
-The python version script is strongly recommended, as the shell script version is just a demo for test.
-
-* hosts.py - python2 script, works for Windows, Linux and MacOS.
-
-* hosts.sh - shell script, works for Linux and MacOS. 
+The python script in this folder is used to update hosts for g0og1e from specific URLs, works for Linux, MacOS and Windows.
 
 Usage
 ------
-To use hosts.py, please make sure you have installed python 2.7.6+ (but NOT 3.x). Just run 'python hosts.py' in the command line with Administrator or root privilege.
-In Windows, it is recommended to run the script as Administrator with a batch file, e.g. 'hosts.bat', which contains
-
-       python disk:\path\to\hosts.py
-
-To use hosts.sh, please make sure your hosts DONOT contain google contents, such as 'xx.xx.xx.xx www.google.com'
+Make sure you have installed python 2.7.6+ (but NOT 3.x). Then run the script with Administrator or root (sudo) privilege.
+* Linux / Mac
+       python /path/to/hosts.py   # as root
+  or 
+      sudo  python /path/to/hosts.py
+* Windows 
+       python disk:\path\to\hosts.py   # as Administrator
+In Windows, it is recommended to run the script as Administrator with a batch file, e.g. 'hosts.bat', which contains the above command.
 
 Acknowledgement
 ------
