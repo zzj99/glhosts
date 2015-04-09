@@ -8,16 +8,16 @@ Make sure you have installed python 2.7.6+ (but NOT 3.x). Then run the script wi
 * Linux / Mac  
 
 ```shell
-python /path/to/hosts.py   # as root
+python hosts.py   # as root
 ```
 
 * Windows 
 
 ```shell
-python disk:\path\to\hosts.py   # as Administrator
+python hosts.py   # as Administrator
 ```
 
-In Windows, it is recommended to run the script as Administrator with a batch file, e.g. 'hosts.bat', which contains the above command.
+In Windows, it is recommended to run the script as Administrator with a batch file, e.g. 'hosts.bat', which contains the above command and path to the script file.
 
 Acknowledgement
 ------
