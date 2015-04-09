@@ -8,7 +8,7 @@ Make sure you have installed python 2.7.6+ (but NOT 3.x). Then run the script wi
 * Linux / Mac  
 
 ```shell
-python hosts.py   # as root
+python hosts.py   # as root, or: sudo python hosts.py
 ```
 
 * Windows 
