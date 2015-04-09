@@ -138,7 +138,7 @@ def check_update():
     # hosts path according to operating system
     hosts=""
     if (os.name == 'nt'): # Windows
-        hosts = os.environ['SYSTEMROOT']+'\Windows\System32\Drivers\etc\hosts'
+        hosts = os.environ['SYSTEMROOT']+'\System32\Drivers\etc\hosts'
     else: # Linux or MacOS
         hosts = '/etc/hosts'
 
