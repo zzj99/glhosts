@@ -3,9 +3,11 @@
 
 """
  check and update google hosts from specific URL
- written in python version 2.7.6 with MIT license.
+ written in python version 2.7.6
+ works for python version 2.7+, but not python 3
  by zzj.99@hotmail.com
  last updated in 2015/04
+ license: MIT
 """
 
 import urllib2      # for opening url, python2 grammar
@@ -58,6 +60,7 @@ def check_ip(ip):
 """ download hosts from specific URL """
 def download_hosts(hosts_url):
     print "Now downloading hosts from ", hosts_url
+    temp_hosts=""
     try:
         response = urllib2.urlopen(hosts_url, timeout=5)
         temp_hosts = tempfile.mktemp()
@@ -71,7 +74,7 @@ def download_hosts(hosts_url):
                 f.write(line)
         f.close()
     except urllib2.URLError, e:
-        print "Can't reach the URL for updating hosts!"
+        print "Can't reach "+hosts_url+" for updating hosts!"
     return temp_hosts
 
 """ write values in hosts_dict into hosts file"""
@@ -114,10 +117,10 @@ def update_hosts(hosts, hosts_url):
 	    succeed = True
             print "Congratulations! Please see updated hosts in ", hosts
 	else:
-	    print "Unfortunately the downloaded ip doesn't work :-("
+	    print "Unfortunately the downloaded ip doesn't work.\n"
 	    succeed = False
     else:
-	print "Unfortunately the URL can not be reached at this time :-("
+	print "Unfortunately the URL can not be reached at this time.\n"
 	succeed = False
     return succeed
 
@@ -138,7 +141,7 @@ def check_update():
     # hosts path according to operating system
     hosts=""
     if (os.name == 'nt'): # Windows
-        hosts = os.environ['SYSTEMROOT']+'\Windows\System32\Drivers\etc\hosts'
+        hosts = os.environ['SYSTEMROOT']+'\System32\Drivers\etc\hosts'
     else: # Linux or MacOS
         hosts = '/etc/hosts'
 
@@ -147,6 +150,7 @@ def check_update():
 	f=open(hosts,'w')
 	f.close()
     
+    # check if ip for g0og1e exists and works
     ip = find_ip(hosts, "www.google.com")
     works = check_ip(ip)
     if (works):
