@@ -156,8 +156,10 @@ def check_update():
     if (works):
 	print "Congratulations, current ip still works :-)"
     else:
-	urls = ["http://www.360kb.com/kb/2_122.html", \
-		"http://freedom.txthinking.com/hosts", \
+	urls = ["https://www.360kb.com/kb/2_122.html", \
+                "https://coding.net/u/scaffrey/p/hosts/git/raw/master/hosts",\
+		"https://freedom.txthinking.com/hosts", \
+                "https://raw.githubusercontent.com/racaljk/hosts/master/hosts", \
                 "https://raw.githubusercontent.com/vokins/simpleu/master/hosts"]
 	succeed = False
 	iurl = 0
